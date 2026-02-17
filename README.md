@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Reproduction of the [Lady Gaga](https://www.ladygaga.com) website, just for skills presentation purposes.
 
 ## Getting Started
 
