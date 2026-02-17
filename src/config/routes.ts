@@ -7,4 +7,10 @@ export const APP_ROUTES = {
   LIVE: () => '/live',
   ACCOUNT: () => '/account',
   CART: () => '/cart',
+  COOKIES: () => '/cookies',
+  DO_NOT_SELL_MY_PERSONAL_INFO: () => '/do-not-sell-my-personal-info',
+  SIGN_UP_FOR_NEWSLETTER: () => '/sign-up-for-newsletter',
+  PRIVACY_POLICY: () => '/privacy-policy',
+  TERMS_CONDITIONS: () => '/terms-conditions',
+  HELP_SUPPORT: () => '/help-support',
 };

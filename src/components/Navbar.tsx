@@ -5,6 +5,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { Typography } from '@/components/ui/Typography';
 
 const linkClassNames =
   'relative py-1.5 px-2  before:absolute before:inset-0 before:border before-border-white before:rounded before:opacity-0 hover:before:opacity-100 before:transition-opacity';
@@ -26,7 +27,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 left-0 w-full z-navbar ">
+    <Typography as="header" className="sticky top-0 left-0 w-full z-navbar">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded"
@@ -34,7 +35,7 @@ export function Navbar() {
         {t('skipToMainContent')}
       </a>
 
-      <nav className="flex items-center justify-between h-14 px-gutter bg-background" role="navigation" aria-label="Main navigation">
+      <nav className="flex container items-center justify-between h-14 px-gutter bg-background" role="navigation" aria-label={t('mainNavigation')}>
         <ul className="flex gap-7">
           {leftNav.map((item) => (
             <li key={item.label}>
@@ -74,6 +75,6 @@ export function Navbar() {
           ))}
         </ul>
       </nav>
-    </header>
+    </Typography>
   );
 }

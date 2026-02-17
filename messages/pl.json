@@ -7,6 +7,16 @@
     "account": "Konto",
     "cart": "Koszyk",
     "skipToMainContent": "Przejdź do głównej treści",
-    "logoAlt": "Logo"
+    "logoAlt": "Logo",
+    "mainNavigation": "Główna nawigacja"
+  },
+  "footer": {
+    "helpSupport": "Pomoc i wsparcie",
+    "privacyPolicy": "Polityka prywatności",
+    "termsConditions": "Regulamin",
+    "cookies": "Pliki cookie",
+    "doNotSellMyPersonalInfo": "Nie sprzedawaj moich danych osobowych",
+    "signUpForNewsletter": "Zapisz się do newslettera",
+    "copyright": "© {year} Interscope Records"
   }
 }
