@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "latest": "Najnowsze",
+    "music": "Muzyka",
+    "shop": "Sklep",
+    "projects": "Projekty",
+    "account": "Konto",
+    "cart": "Koszyk",
+    "skipToMainContent": "Przejdź do głównej treści",
+    "logoAlt": "Logo"
+  }
+}
