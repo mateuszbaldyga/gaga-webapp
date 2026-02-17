@@ -23,8 +23,8 @@ export function Footer() {
 
   return (
     <Typography as="footer" variant="body2" className="container">
-      <nav className="flex justify-between gap-2.5 bg-black-2 py-9 px-10 rounded-sm">
-        <ul className="grid grid-rows-3 gap-2.5 grid-flow-col w-full">
+      <nav className="bg-black-2 flex justify-between gap-2.5 rounded-sm px-10 py-9">
+        <ul className="grid w-full grid-flow-col grid-rows-3 gap-2.5">
           {links.map((item) => (
             <li key={item.label}>
               {item.href ? (

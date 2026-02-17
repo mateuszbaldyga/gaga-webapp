@@ -27,15 +27,19 @@ export function Navbar() {
   ];
 
   return (
-    <Typography as="header" className="sticky top-0 left-0 w-full z-navbar">
+    <Typography as="header" className="z-navbar sticky top-0 left-0 w-full">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-black"
       >
         {t('skipToMainContent')}
       </a>
 
-      <nav className="flex container items-center justify-between h-14 px-gutter bg-background" role="navigation" aria-label={t('mainNavigation')}>
+      <nav
+        className="px-gutter bg-background container flex h-14 items-center justify-between"
+        role="navigation"
+        aria-label={t('mainNavigation')}
+      >
         <ul className="flex gap-7">
           {leftNav.map((item) => (
             <li key={item.label}>
@@ -46,7 +50,7 @@ export function Navbar() {
           ))}
         </ul>
 
-        <Link href={APP_ROUTES.HOME()} className="absolute left-1/2 w-25 h-10.5 -translate-x-1/2">
+        <Link href={APP_ROUTES.HOME()} className="absolute left-1/2 h-10.5 w-25 -translate-x-1/2">
           <Image
             src="/images/logo-white.avif"
             alt={t('logoAlt')}

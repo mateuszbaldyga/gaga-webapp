@@ -1,5 +1,5 @@
-import { createNavigation } from "next-intl/navigation";
-import { routing } from "./routing";
+import { createNavigation } from 'next-intl/navigation';
+import { routing } from './routing';
 
 const { Link, redirect: _redirect, usePathname, useRouter, getPathname } = createNavigation(routing);
 
@@ -8,7 +8,7 @@ const { Link, redirect: _redirect, usePathname, useRouter, getPathname } = creat
 function redirect(...params: Parameters<typeof _redirect>): never {
   _redirect(...params);
   // This line is unreachable but satisfies TypeScript's never return type
-  throw new Error("Redirect failed");
+  throw new Error('Redirect failed');
 }
 
 export { Link, usePathname, useRouter, getPathname, redirect };
