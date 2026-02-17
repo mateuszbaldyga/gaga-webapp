@@ -8,7 +8,7 @@ import { Link } from '@/i18n/navigation';
 import { Typography } from '@/components/ui/Typography';
 
 const linkClassNames =
-  'relative py-1.5 px-2  before:absolute before:inset-0 before:border before-border-white before:rounded before:opacity-0 hover:before:opacity-100 before:transition-opacity';
+  'relative py-1.5 px-2  before:absolute before:inset-0 before:border before-border-white before:rounded before:opacity-0 hover:before:opacity-100 before:transition-opacity group-hover:opacity-50 hover:opacity-100! transition-opacity';
 
 export function Navbar() {
   const t = useTranslations('navigation');
@@ -36,7 +36,7 @@ export function Navbar() {
       </a>
 
       <nav
-        className="px-gutter bg-background container flex h-14 items-center justify-between"
+        className="px-gutter group bg-background container flex h-14 items-center justify-between"
         role="navigation"
         aria-label={t('mainNavigation')}
       >
